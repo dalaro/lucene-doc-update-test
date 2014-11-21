@@ -74,7 +74,7 @@ public class TestLucene {
         d.add(lf2);
 
         for (IndexableField f : d.getFields()) {
-            log.info("{}", f);
+            log.info("Updated document will contain field: {}", f);
         }
 
         writer.updateDocument(new Term(DOCID_FIELD_NAME, docid), d);
